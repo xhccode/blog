@@ -1,13 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    <div>我的博客22</div> 
-    <a href="click.html">click重复点击</a>
-</body>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>深入了解z-index</title>
+	</head>
+	<body>
+		<pre>
+			<h1>z-index基础</h1>
+			含义：
+				z-index 属性指定了元素及其子元素的 [ z顺序 ]，而 [ z顺序 ] 可以决定当元素发生覆盖的时候，那个元素在上面。
+			通常一个较大 z-index 值的元素会覆盖较低的哪一个。
+			
+			属性值：
+				z-index：auto；  			默认值
+				z-index：<integer>；  	整数值  1,2,3
+				z-index：inherit；  		继承
+			
+			特性：
+				1.支持负值；-1
+				2.支持 css3 animation 动画
+				3.支持 css 2.1 时代，需要和定位元素配合使用；
+					备注：
+						如果不考虑 css3 ，只有定位元素 （ position:relactive / absolute / fixed / sticy） 的 z-index 才有作用个！
+					在 css3 中有例外 ...
+			
+			<h1>z-index 与 css 定位属性</h1>
+			
+			position：static;z-index:2;			×
+			position：relactive;z-index:2;		√
+			position：absolute;z-index:2;		√
+			position：fixed;z-index:2;			√
+			position：sticky;z-index:2;			√
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</pre>
+	</body>
 </html>
